@@ -6,6 +6,12 @@ The player has to fill a 3 × 3 grid using the numbers **1–9**, with each numb
 
 ---
 
+## 🚀 Live Demo
+
+👉 [Play Magic Square](https://magicsquare-brainstorming-mathgame.streamlit.app/)
+
+---
+
 ## 📌 Problem Statement
 
 Develop an interactive Magic Square game that allows the user to construct a valid 3 × 3 Magic Square.

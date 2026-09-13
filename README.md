@@ -238,7 +238,7 @@ Therefore, this is a valid 3 × 3 Magic Square.
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-link>
+git clone <https://github.com/MEGHA2612/Magic_Square.git>
 ```
 
 ### 2. Open the project folder

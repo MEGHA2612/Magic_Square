@@ -1,4 +1,4 @@
-# 🪄 Magic Square
+# Magic Square
 
 An interactive **3 × 3 Magic Square Game** developed using Python and Streamlit.
 

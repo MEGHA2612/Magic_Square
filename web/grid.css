@@ -1,0 +1,153 @@
+/* --------------------------------
+   MAIN COMPONENT
+-------------------------------- */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #171329;
+    color: #f5efff;
+}
+
+/* --------------------------------
+   GAME CONTAINER
+-------------------------------- */
+.game-container {
+    text-align: center;
+    padding: 25px;
+    background: #211a38;
+    border-radius: 20px;
+    border: 1px solid #4b3b69;
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* --------------------------------
+   TITLE
+-------------------------------- */
+h1 {
+    margin-bottom: 5px;
+    color: #d9b8ff;
+    font-size: 36px;
+}
+
+/* --------------------------------
+   LEVEL
+-------------------------------- */
+.level-text {
+    color: #b9a7d9;
+    font-size: 18px;
+}
+
+/* --------------------------------
+   MAGIC SQUARE BOARD
+-------------------------------- */
+#game-board {
+    width: 360px;
+    height: 360px;
+    margin: 25px auto 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 3px solid #a96cff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 0 20px rgba(169, 108, 255, 0.30);
+}
+
+/* --------------------------------
+   EMPTY / NORMAL CELLS
+-------------------------------- */
+.game-cell {
+    border: 1px solid #5f4b7a;
+    background-color: #302747;
+    color: #f8f1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: text;
+    outline: none;
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        border 0.2s;
+}
+
+/* --------------------------------
+   HOVER
+-------------------------------- */
+.game-cell:hover {
+    background-color: #3b3056;
+}
+
+/* --------------------------------
+   SELECTED CELL
+-------------------------------- */
+.game-cell.selected {
+    background-color: #4b3670;
+    border: 3px solid #d9b8ff;
+}
+
+/* --------------------------------
+   PLAYER ENTERED NUMBER
+-------------------------------- */
+.game-cell.player-number {
+    color: #ffb7f5;
+    background-color: #39294f;
+}
+
+/* --------------------------------
+   PLAYER NUMBER + SELECTED
+-------------------------------- */
+.game-cell.player-number.selected {
+    color: #ffd6fa;
+    background-color: #553a72;
+    border: 3px solid #ffb7f5;
+}
+
+/* --------------------------------
+   BUTTON AREA
+-------------------------------- */
+.buttons {
+    margin-top: 5px;
+}
+
+/* --------------------------------
+   BUTTONS
+-------------------------------- */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #8b4de8;
+    color: white;
+    transition:
+        background-color 0.2s,
+        transform 0.2s;
+}
+button:hover {
+    background-color: #a96cff;
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(0);
+}
+
+/* --------------------------------
+   STOPWATCH
+-------------------------------- */
+#timer {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffb7f5;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
